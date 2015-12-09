@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/2002/xmlspec/dtd/2.10/xmlspec.dtd">
+<Context>
+	<Resource name="jdbc/cly" auth="Container" type="javax.sql.DataSource"
+		username="root" password="" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/cly?useUnicode=true&amp;characterEncoding=UTF-8"
+		maxActive="2" maxIdle="2" />
+</Context>

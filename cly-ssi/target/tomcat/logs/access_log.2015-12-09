@@ -1,0 +1,3 @@
+127.0.0.1 - - [09/Dec/2015:17:50:17 +0800] "GET /cly-ssi/user/selectById?id=1 HTTP/1.1" 200 209 http-bio-8080-exec-1 1879
+127.0.0.1 - - [09/Dec/2015:17:50:54 +0800] "POST /cly-ssi/user/save HTTP/1.1" 200 46 http-bio-8080-exec-2 436
+127.0.0.1 - - [09/Dec/2015:17:51:47 +0800] "POST /cly-ssi/user/save HTTP/1.1" 200 52 http-bio-8080-exec-3 232

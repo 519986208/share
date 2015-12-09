@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cly.ssi.dao.IUserDao">
+
+	<resultMap id="baseMap" type="com.cly.ssi.entity.User"
+		autoMapping="true" />
+
+	<insert id="save" parameterType="com.cly.ssi.entity.User"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into t_user
+		(userName,password,nickName,gender,createTime,updateTime)
+		values(#{userName},#{password},#{nickName},#{gender},now(),now())
+	</insert>
+
+	<select id="selectById" parameterType="int" resultType="com.cly.ssi.entity.User">
+		select *
+		from t_user where id =#{id}
+	</select>
+
+</mapper>
